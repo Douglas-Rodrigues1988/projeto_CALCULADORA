@@ -1,2 +1,2 @@
 # projeto_CALCULADORA
-Calculadora simples
+Calculadora com design futurista e código otimizado
