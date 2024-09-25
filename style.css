@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212; /* Fundo escuro para destacar a calculadora */
+    padding: 90px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    width: 400px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #FBAB18, #F7D07C); /* Gradiente futurista */
+    padding: 20px;
+    border-radius: 10px; /* Bordas mais arredondadas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra mais suave */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+}
+
+.display {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    color: #FBAB18; /* Cor de texto vibrante */
+    font: normal 4rem 'Orbitron', sans-serif; /* Fonte moderna */
+    overflow: hidden;
+    border-radius: 10px; /* Bordas mais arredondadas */
+    border: 2px solid #FBAB18; /* Borda luminosa */
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px; /* Aumentado para dar mais espaço */
+}
+
+.calculator button {
+    background-color: #1f1f1f; /* Fundo escuro para os botões */
+    color: #FBAB18; /* Cor vibrante para os textos dos botões */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas para os botões */
+    font-size: 1.5rem;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid transparent; /* Inicialmente, sem borda */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+}
+
+.calculator button:hover {
+    background-color: #FBAB18; /* Cor de fundo quando o botão é hover */
+    color: black; /* Cor do texto do botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+.calculator button:active {
+    transform: scale(0.95); /* Efeito de pressionar o botão */
+}
